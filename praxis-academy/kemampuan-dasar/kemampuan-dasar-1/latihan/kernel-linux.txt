@@ -1,0 +1,37 @@
+Linux kernel dapat ditemukan pada direktory /boot
+
+Pertama kita kenali dulu apa itu "kernel"?
+Kernel merupakan lowest level of easy replacable software yang terhubung dengan hardware pada komputer.
+Kernel bertanggung jawab untuk menghubungkan semua aplikasi yang sedang berjalan pada "user mode" tersampaikan
+ke perangkat keras fisik (seperti LCD, DVD drive, etc), dan mengizinkan aplikasi untuk memproses atau bisa 
+dianggap sebagai server, untuk mendapatkan informasi satu sama lain (software-hardware0 menggunakan inter-
+process communication (IPC). Ada 3 tipe kernel, yaitu microkernel, monolithic, dan hybrid (gabungan microkernel
+dengan monolithic yag dapat dipilih ketika dijalankan)
+
+untuk Linux sendiri kernel yang digunakan merupakan tipe monolithic, dimana cakupan yang disediakan oleh kernel
+tidak hanya CPU, memory dan IPC, melainkan sudah termasuk device driver, file system management, dan system server
+call. Pada OS linux akses software terhadap hardware lebih baik dan sangat mendukung multitasking karena ketika
+sebuah program membutuhkan akses informasi dari sebuah proses dapat dilakukan secara direct tanpa harus mengantri
+dulu di system. Kekurangannya adalah, semua proses yang berjalan dianggap sebagai supervisor mode.
+Hal ini sangat berbeda dengan OS windows yang menggunakan sistem micro kernel. System default hanya memanage CPU,
+memory dan IPC. Keunggulan dari micro kernel sendiri sudah jelas yaitu file system yang lebih kecil dan lebih portable.
+System tetap dapat mengakses hardware, namun tidak maksimal jika user tidak menginstall hardware driver. Serta, semua
+proses pada microkernel berada pada user mode, sehingga cenderung lebih aman karena untuk mengakses file system harus
+memiliki permission as supervisor mode.
+
+file terkait :
+1. vmlinuz (kernel Linux)
+vm merupakan singkatan virtual memory, merupakan teknik memory management yang menyediakan abstraksi ideal dari sumber
+penyimpanan yang tersedia secara aktual yang disediakan oleh mesin.linu sendiri menunjukkan bahwa OS yang digunakan 
+adalah Linux dan Z menandakan bahwa file tersebut dalam keadaan terkompresi.
+2. initrd
+initrd atau initial ramdisk merupakan skema untuk memuat file system root secara temporary ke memory. file ini merupakan
+bagian yang dibutuhkan untuk menjalankan Linux startup process.
+3. System.map
+System.map file merupakan file yang memuat symbol table yang digunakan oleh kernal. Pada tabel yang tertera akan menunjukkan
+simbol nama dan alamatnya dalam memory. Simbol yang ditampilkan dapat ditujukan untuk variabel atau fungsi. System.map
+sangat dibutuhkan ketika kernel akan mengakses sebuah variabel atau fungsi.
+4. Config file
+Sama seperti umumnya file config, file config pada kernel Linux memuat semua konfigurasi yang digunakan untuk mengontrol
+operasi program pada kernel Linux. Untuk pengguna baru, tidak direkomendasikan untuk merubah konfigurasi default karena
+dapat menyebabkan crash ketika sebuah program berjalan dan tidak dapat mengakses hardware.

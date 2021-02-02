@@ -1,0 +1,244 @@
+*catatan
+Menampilkan semua data yang ada di direktori Home akan sangat banyak. jadi saya tampilkan sedikit saja dan disertakan dengan
+history penggunaan sheel/terminal sejak direktori praxis-academy dibuat saja
+
+history :
+  618  mkdir praxis-academy
+  619  cd praxis-academy
+  620  mkdir kemampuan-dasar-1
+  621  cd kemampuan-dasar-1
+  622  mkdir latihan
+  623  cd latihan
+  624  ls
+  625  cd praxis-academy
+  626  ls
+  627  cd kemampuan-dasar-1
+  628  ls
+  629  cd latihan
+  630  cd ..
+  631  cd
+  632  display manager
+  633  help
+  634  system info
+  635  systemd
+  636  info
+  637  cmdline
+  638  /proc/cmdline
+  639  sudo /proc/cmdline
+  640  --help
+  641  uname --hel
+  642  -s
+  643  uname -s
+  644  uname -r
+  645  uname -v
+  646  uname -a
+  647  cd praxis-academy
+  648  git init
+  649  git status
+  650  git remote add origin https://github.com/aryanicosa/praxis-academy.git
+  651  git add .
+  652  git status
+  653  git commit -m "upload dulu hari ini, besok lanjut lagi"
+  654  git branch -M main
+  655  git push -u origin main
+  656  ls
+  657  ls _R
+  658  ls -R
+  659  ls -al
+  660  ls -a
+  661  cat > coba
+  662  cat coba
+  663  cat coba-2
+  664  cat > coba-2
+  665  cat coba coba-2 > coba-3
+  666  cat coba
+  667  cat coba-3
+  668  rm coba-3
+  669  ls
+  670  mkdir direktori-percobaan
+  671  mv coba,coba-2 direktori-percobaan
+  672  mv coba direktori-percobaan
+  673  mv coba-2 direktori-percobaan
+  674  ls
+  675  mkdir /direktori-percobaan/direktori-dalam-direktori
+  676  sudo mkdir /direktori-percobaan/direktori-dalam-direktori
+  677  ls
+  678  mkdir /direktori-percobaan/direktori-baru
+  679  mkdir /direktori-lainn/direktori-baru
+  680  cd direktori-percobaan
+  681  mkdir direktori-baru
+  682  ls
+  683  rmdir direktori-baru
+  684  ls
+  685  cd ..
+  686  mv direktori-percobaan nama-baru-direktori
+  687  ls
+  688  history
+  689  date
+  690  pws
+  691  pwd
+  692  history
+
+tampilan terminal selama menjalankan command :
+
+aryanicosa@aryanicosa:~$ ls
+Arduino    Downloads   Music       myprojectflask  Public     Videos
+Desktop    list-app    myproject   Pictures        Templates
+Documents  miniconda3  myproject2  praxis-academy  try.py
+aryanicosa@aryanicosa:~$ ls _R
+ls: cannot access '_R': No such file or directory
+aryanicosa@aryanicosa:~$ ls -R
+.:
+Arduino    Downloads   Music       myprojectflask  Public     Videos
+Desktop    list-app    myproject   Pictures        Templates
+Documents  miniconda3  myproject2  praxis-academy  try.py
+
+./Arduino:
+libraries
+
+./Arduino/libraries:
+readme.txt
+
+./Desktop:
+arduino-arduinoide.desktop
+
+./Documents:
+arduino-1.8.13  tes.py
+
+./Documents/arduino-1.8.13:
+arduino                 examples    java       reference      tools-builder
+arduino-builder         hardware    lib        revisions.txt  uninstall.sh
+arduino-linux-setup.sh  install.sh  libraries  tools
+
+aryanicosa@aryanicosa:~$ ls -al
+total 240
+drwxr-xr-x 37 aryanicosa aryanicosa  4096 Feb  2 13:22 .
+drwxr-xr-x  3 root       root        4096 Jan 20 05:07 ..
+drwxrwxr-x  3 aryanicosa aryanicosa  4096 Jan 21 13:25 Arduino
+drwxrwxr-x  3 aryanicosa aryanicosa  4096 Jan 21 13:25 .arduino15
+-rw-------  1 aryanicosa aryanicosa 13630 Feb  2 01:31 .bash_history
+-rw-r--r--  1 aryanicosa aryanicosa   220 Jan 20 05:07 .bash_logout
+-rw-r--r--  1 aryanicosa aryanicosa  4270 Jan 27 13:30 .bashrc
+drwx------ 21 aryanicosa aryanicosa  4096 Jan 30 21:09 .cache
+drwxrwxr-x  5 aryanicosa aryanicosa  4096 Jan 24 00:39 .cinnamon
+drwxrwxr-x  2 aryanicosa aryanicosa  4096 Jan 27 13:30 .conda
+-rw-rw-r--  1 aryanicosa aryanicosa    26 Jan 27 13:31 .condarc
+drwxr-xr-x 23 aryanicosa aryanicosa  4096 Jan 28 14:49 .config
+drwxr-xr-x  2 aryanicosa aryanicosa  4096 Jan 21 13:26 Desktop
+drwxr-xr-x  3 aryanicosa aryanicosa  4096 Jan 22 14:49 Documents
+drwxr-xr-x  2 aryanicosa aryanicosa  4096 Jan 28 16:11 Downloads
+drwxrwxr-x  2 aryanicosa aryanicosa  4096 Jan 20 14:37 .freedownloadmanager
+-rw-rw-r--  1 aryanicosa aryanicosa    56 Jan 26 00:34 .gitconfig
+drwx------  3 aryanicosa aryanicosa  4096 Jan 21 13:26 .gnome
+drwx------  3 aryanicosa aryanicosa  4096 Jan 20 05:19 .gnupg
+-rw-r--r--  1 aryanicosa aryanicosa   245 Jan 24 00:39 .gtkrc-2.0
+-rw-r--r--  1 aryanicosa aryanicosa   516 Jan 20 05:07 .gtkrc-xfce
+drwxrwxr-x  2 aryanicosa aryanicosa  4096 Jan 19 22:59 .icons
+drwxr-xr-x  5 aryanicosa aryanicosa  4096 Jan 30 21:32 .ipython
+drwxrwxr-x  3 aryanicosa aryanicosa  4096 Jan 21 13:25 .java
+-rw-------  1 aryanicosa aryanicosa    28 Jan 24 22:13 .lesshst
+drwxrwxr-x  3 aryanicosa aryanicosa  4096 Jan 20 05:19 .linuxmint
+drwxrwxr-x  4 aryanicosa aryanicosa  4096 Jan 28 15:18 list-app
+drwxr-xr-x  5 aryanicosa aryanicosa  4096 Jan 30 21:32 .local
+drwxrwxr-x 16 aryanicosa aryanicosa  4096 Jan 27 13:35 miniconda3
+drwx------  6 aryanicosa aryanicosa  4096 Jan 20 14:37 .mozilla
+drwxr-xr-x  2 aryanicosa aryanicosa  4096 Jan 20 05:19 Music
+drwxrwxr-x  6 aryanicosa aryanicosa  4096 Jan 27 20:44 myproject
+drwxrwxr-x  6 aryanicosa aryanicosa  4096 Jan 25 22:01 myproject2
+drwxrwxr-x  6 aryanicosa aryanicosa  4096 Jan 27 23:18 myprojectflask
+-rw-------  1 aryanicosa aryanicosa   896 Jan 28 21:55 .mysql_history
+drwxrwxr-x  5 aryanicosa aryanicosa  4096 Jan 28 21:54 .npm
+drwxrwxr-x  2 aryanicosa aryanicosa  4096 Jan 21 13:25 .oracle_jre_usage
+drwxr-xr-x  2 aryanicosa aryanicosa  4096 Jan 20 05:19 Pictures
+drwx------  3 aryanicosa aryanicosa  4096 Jan 19 23:22 .pki
+drwxrwxr-x  4 aryanicosa aryanicosa  4096 Feb  2 00:56 praxis-academy
+-rw-r--r--  1 aryanicosa aryanicosa   807 Jan 20 05:07 .profile
+drwxr-xr-x  2 aryanicosa aryanicosa  4096 Jan 20 05:19 Public
+drwxrwxr-x  2 aryanicosa aryanicosa  4096 Jan 29 13:20 .pylint.d
+-rw-------  1 aryanicosa aryanicosa   242 Jan 31 22:20 .python_history
+-rw-r--r--  1 aryanicosa aryanicosa     0 Jan 20 05:22 .sudo_as_admin_successful
+drwxr-xr-x  2 aryanicosa aryanicosa  4096 Jan 20 05:19 Templates
+drwxrwxr-x  2 aryanicosa aryanicosa  4096 Jan 19 22:59 .themes
+-rw-rw-r--  1 aryanicosa aryanicosa   247 Jan 31 23:56 try.py
+drwxr-xr-x  2 aryanicosa aryanicosa  4096 Jan 20 05:19 Videos
+drwxrwxr-x  3 aryanicosa aryanicosa  4096 Jan 19 23:22 .vscode
+-rw-------  1 aryanicosa aryanicosa    55 Feb  2 13:22 .Xauthority
+-rw-------  1 aryanicosa aryanicosa  8337 Feb  2 13:23 .xsession-errors
+-rw-------  1 aryanicosa aryanicosa  9068 Feb  2 12:45 .xsession-errors.old
+aryanicosa@aryanicosa:~$ ls -a
+.                     .gnupg          .oracle_jre_usage
+..                    .gtkrc-2.0      Pictures
+Arduino               .gtkrc-xfce     .pki
+.arduino15            .icons          praxis-academy
+.bash_history         .ipython        .profile
+.bash_logout          .java           Public
+.bashrc               .lesshst        .pylint.d
+.cache                .linuxmint      .python_history
+.cinnamon             list-app        .sudo_as_admin_successful
+.conda                .local          Templates
+.condarc              miniconda3      .themes
+.config               .mozilla        try.py
+Desktop               Music           Videos
+Documents             myproject       .vscode
+Downloads             myproject2      .Xauthority
+.freedownloadmanager  myprojectflask  .xsession-errors
+.gitconfig            .mysql_history  .xsession-errors.old
+.gnome                .npm
+aryanicosa@aryanicosa:~$ cat > coba
+ini file untuk mencoba membuat file dari terminal
+aryanicosa@aryanicosa:~$ cat coba
+ini file untuk mencoba membuat file dari terminal
+aryanicosa@aryanicosa:~$ cat coba-2
+cat: coba-2: No such file or directory
+aryanicosa@aryanicosa:~$ cat > coba-2
+coba buat file lagi
+aryanicosa@aryanicosa:~$ cat coba coba-2 > coba-3
+aryanicosa@aryanicosa:~$ cat coba
+ini file untuk mencoba membuat file dari terminal
+aryanicosa@aryanicosa:~$ cat coba-3
+ini file untuk mencoba membuat file dari terminal
+coba buat file lagi
+aryanicosa@aryanicosa:~$ rm coba-3
+aryanicosa@aryanicosa:~$ ls
+Arduino  Desktop    list-app    myproject       Pictures        Templates
+coba     Documents  miniconda3  myproject2      praxis-academy  try.py
+coba-2   Downloads  Music       myprojectflask  Public          Videos
+aryanicosa@aryanicosa:~$ mkdir direktori-percobaan
+aryanicosa@aryanicosa:~$ mv coba,coba-2 direktori-percobaan
+mv: cannot stat 'coba,coba-2': No such file or directory
+aryanicosa@aryanicosa:~$ mv coba direktori-percobaan
+aryanicosa@aryanicosa:~$ mv coba-2 direktori-percobaan
+aryanicosa@aryanicosa:~$ ls
+Arduino              Downloads   myproject       praxis-academy  Videos
+Desktop              list-app    myproject2      Public
+direktori-percobaan  miniconda3  myprojectflask  Templates
+Documents            Music       Pictures        try.py
+aryanicosa@aryanicosa:~$ mkdir /direktori-percobaan/direktori-dalam-direktori
+mkdir: cannot create directory ‘/direktori-percobaan/direktori-dalam-direktori’: No such file or directory
+aryanicosa@aryanicosa:~$ sudo mkdir /direktori-percobaan/direktori-dalam-direktori
+[sudo] password for aryanicosa:                
+mkdir: cannot create directory ‘/direktori-percobaan/direktori-dalam-direktori’: No such file or directory
+aryanicosa@aryanicosa:~$ ls
+Arduino              Downloads   myproject       praxis-academy  Videos
+Desktop              list-app    myproject2      Public
+direktori-percobaan  miniconda3  myprojectflask  Templates
+Documents            Music       Pictures        try.py
+aryanicosa@aryanicosa:~$ ^C
+aryanicosa@aryanicosa:~$ mkdir /direktori-percobaan/direktori-baru
+mkdir: cannot create directory ‘/direktori-percobaan/direktori-baru’: No such file or directory
+aryanicosa@aryanicosa:~$ mkdir /direktori-lainn/direktori-baru
+mkdir: cannot create directory ‘/direktori-lainn/direktori-baru’: No such file or directory
+aryanicosa@aryanicosa:~$ cd direktori-percobaan
+aryanicosa@aryanicosa:~/direktori-percobaan$ mkdir direktori-baru
+aryanicosa@aryanicosa:~/direktori-percobaan$ ls
+coba  coba-2  direktori-baru
+aryanicosa@aryanicosa:~/direktori-percobaan$ rmdir direktori-baru
+aryanicosa@aryanicosa:~/direktori-percobaan$ ls
+coba  coba-2
+aryanicosa@aryanicosa:~/direktori-percobaan$ cd ..
+aryanicosa@aryanicosa:~$ mv direktori-percobaan nama-baru-direktori
+aryanicosa@aryanicosa:~$ ls
+Arduino    Downloads   Music       myprojectflask       praxis-academy  try.py
+Desktop    list-app    myproject   nama-baru-direktori  Public          Videos
+Documents  miniconda3  myproject2  Pictures             Templates
+

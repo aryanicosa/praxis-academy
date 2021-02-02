@@ -1,0 +1,31 @@
+*Note
+Saya pengguna baru linux mint, tetapi selama 2 minggu menggunakan Linux saya merasa nyaman dan lebih ringan sehingga 
+memutuskan untuk menggunakan Linux sebagai OS utama tanpa menghapus OS sebelumnya (Windows 10).
+
+1. Ketika melakukan booting, muncul keterangan GRUB4DOS 0.4.6a yang mengartikan bahwa boot loader sedang bekerja 
+untuk menampilkan pilihan booting pada OS yang terinstal pada hardisk.
+2. GNU GRUB atau lebih sering disebut "Grant Unified Bootloader GRUB" merupakan package bootloader yang dikembangkan 
+oleh GNU Project.GNU Project merupakan sebuah kolaborasi pengembangan free software untuk memberikan kebebasan bagi 
+pengguna software untuk menjalankan, mengembangkan, menduplikasi, mendistribusikan, mempeljari, bahkan memodifikasi 
+software tersebut. 
+3. Proses booting bekerja 
+    - BIOS akan mencari konfigurasi utama bootable device. Secara default biasanya akan mengarah ke hardisk. Namun,
+      kita tetap dapat mengkonfigurasi prioritas target booting pada BIOS (melalui menu pengaturan BIOS, umumnya
+      dapat dimasuki dengan menekan tombol F2 atau F12 ksesaat setelah tombol ON ditekan).
+    - Selain system dengan BIOS (atau MBR), ada juga system yang disebut UEFI firmware (atau GPT).
+    - Stage 1. Ketika melakukan start-up pada system BIOS, sistem akan menuliskan boot.img pada 440 bytes MBR 
+      (terkadang 512 bytes)
+    - Stage 1.5. file core.img akan disimpan pada sektor kosong diantara MBR dengan partisi disk pertama.
+    - Stage 2. core.img akan memuat /boot/grup/i386-pc/normal.mod dari partisi yang telah dikonfigurasi grub-install
+    - Setelah Stage 2 berjalan (tanpa error), akan ditampilkan opsi booting yang dapat dipilih.
+    Dalam proses ini, GRUB4DOS saya di instal pada partisi yang disiapkan ketika instalasi linux, kemudian menggunakan
+    program EasyBCD pada windows untuk menjalankannya.
+    
+    Secara umum, jika hanya ada satu OS yang berjalan pada komputer. maka proses GRUB4DOS akan langsung masuk ke OS tersebut.
+    Catatan : Dikarenakan system disk yang digunakan adalah LEGACY (BIOS), terdapat batasan jumlah OS system yang dapat dimuat
+              sebanyak 4 OS saja. Pada system dengan UEFI Firmware, tidak dibatasi jumlahnya.
+              Ada beberapa tipe GNU GRUB yang dapat digunakan, dalam hal ini saya menggunakan GRUB4DOS agar mempermudah proses
+              booting yang saya muat menggunakan Windows Boot Manager terlebih dahulu.
+    *tambahan : Kelebihan penggunaan Linux Mint (selama 2 minggu terakhir saya gunakan), selain dengan konfigurasinya yang mudah
+                kita juga dapat mendeteksi adanya hardware yang bermasalah pada driver sesaat sebelum OS bekerja, ditunjukkan
+                dengan pesan error X.XX No irq handler for vector.

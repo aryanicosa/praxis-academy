@@ -1,0 +1,8 @@
+#!/bin/bar
+cd $ndir
+if [ -f "*.java" ];
+then
+echo "Ada file Java pada direktori $ndir"
+else
+echo "Tidak ditemukan file Java pada direktori $ndir"
+fi
