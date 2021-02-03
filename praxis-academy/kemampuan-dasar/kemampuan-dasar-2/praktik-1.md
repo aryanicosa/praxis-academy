@@ -1,6 +1,6 @@
 <h1>  Langkah-langkah belajar dasar kolaborasi dengan github: </h1>
 
-<h4>**STEP 1. Menggunakan akun utama yang membuat project/repositori**</h4>
+<h4>STEP 1. Menggunakan akun utama yang membuat project/repositori</h4>
 
 1. Melalui terminal buat direktori lokal rhymes dan masuk
   * mkdir rhymes
@@ -42,8 +42,8 @@ link nya error, jadi tambahk file baru secara manual saja
   * git branch -M main
   * git push -u origin main
 
-<h4>**STEP 2. Menggunakan akun lain untuk mengkopi/clone atau untuk bekerjasama 
-dapat melakukanfork project/repositori dari akun utama**</h4>
+<h4>STEP 2. Menggunakan akun lain untuk mengkopi/clone atau untuk bekerjasama 
+dapat melakukanfork project/repositori dari akun utama</h4>
 
 1. Pindah ke akun lain
   * buka https://github.com/aryanicosa/rhymes sebagai repo yang akan dikolaborasi
@@ -67,7 +67,7 @@ dapat melakukanfork project/repositori dari akun utama**</h4>
 buat pull request dengan menambahkan pesan agar pada repo utama yg di fork diketahui
 apa yang disarankan
 
-<h4>**STEP 3. Mereview dan menerima/menolak pull request**</h4>
+<h4>STEP 3. Mereview dan menerima/menolak pull request</h4>
 
 1. Kembali ke akun utama dan repo rhyme. Perhatikan bahwa pada bar pull request
    muncul pemberitahuan
@@ -104,7 +104,7 @@ masuk ke repo rhymes lokal, kemudian rename origin
 
 10. Kembali ke github dan amati bahwa tidak ada lagi pull request
 
-<h4>**STEP 4. Membuat banyak perubahan di forked repo**</h4>
+<h4>STEP 4. Membuat banyak perubahan di forked repo</h4>
 
 1. masuk kembali ke repo lokal yg di clone dari fork yang dilakukan
 
@@ -156,16 +156,6 @@ pick 648596f Update README.txt
 squash 60880f1 Fixed typo in README.txt
 squash 4a7a25d Update README.txt
 squash add3823 Update README.txt
-
-# Rebase 567a79b..add3823 onto 60880f1 (6 commands)
-#
-# Commands:
-# p, pick <commit> = use commit
-# r, reword <commit> = use commit, but edit the commit message
-# e, edit <commit> = use commit, but stop for amending
-# s, squash <commit> = use commit, but meld into previous commit
-# f, fixup <commit> = like "squash", but discard this commit's log message
-# x, exec <command> = run command (the rest of the line) using shell
 
 13. setelah rebase dirasa cukup, kemudian dapat melakukan push ke branch baru pada remote jogja
   * git push --set-upstream jogja jogjas-changes
