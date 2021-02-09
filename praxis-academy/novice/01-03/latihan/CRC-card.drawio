@@ -1,0 +1,21 @@
+<mxfile host="app.diagrams.net" modified="2021-02-09T03:31:23.763Z" agent="5.0 (X11)" etag="rK8S-Af5oS6CjOK3CVFn" version="14.2.9" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1108" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <object label="&lt;div align=&quot;left&quot;&gt;(class Name)&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;class HTML_to_MD &lt;br&gt;&lt;/div&gt;" id="bMiLowd-mDZHurNxBkVF-14">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+            <mxGeometry x="170" y="150" width="411" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="bMiLowd-mDZHurNxBkVF-15" value="&lt;div align=&quot;left&quot;&gt;(Responsibilities)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;convert html file to markdown&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;upload to cloud&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="210" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="bMiLowd-mDZHurNxBkVF-16" value="&lt;div align=&quot;left&quot;&gt;(collaborator)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;convert image file and upload to cloud&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;pick the link and attach to markdown file&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="380" y="210" width="201" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
