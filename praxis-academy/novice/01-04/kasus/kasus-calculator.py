@@ -48,7 +48,7 @@ print("Selamat datang di program kalkulator sederhana " + nama + "\nsilakan :")
 
 while True:
     print("1. luas persegi\n2. keliling persegi\n3. luas lingkaran\n4. keliling lingkaran")
-    print("5. luas segitiga sama sisi\n6. keliling segitiga sama sisi")
+    print("5. luas segitiga sama sisi\n6. keliling segitiga sama sisi\n7. Exit")
 
     value = input()
     if value == "1":
@@ -69,6 +69,8 @@ while True:
     elif value == "6":
         f = int(input("masukan nilai sisi : "))
         calc_nama.keliling_segitiga_sama_sisi(f)
+    elif value == '7':
+        break
     else:
         print("Salah angka brok!")
 
