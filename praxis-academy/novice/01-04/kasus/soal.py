@@ -15,7 +15,7 @@ print(.....)
 jawaban the number : 9.99999
 '''
 
-def pembagianInt(a=0, b=0):
+def pembagianInt(a, b):
     return int(a / b)
 
 def pembagianFloat(a, b):
