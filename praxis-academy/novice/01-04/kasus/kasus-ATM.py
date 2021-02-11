@@ -25,14 +25,18 @@ class User():
 
     def withdraw(self, wd):
         self.wd = wd
-        self.inquiry -= self.wd
-        print("Your balance = ", self.inquiry)
+        if self.inquiry - self.wd <= 0:
+            print("Saldo tidak cukup!")
+        else:
+            self.inquiry -= self.wd
+            print("Your balance = ", self.inquiry)
 
     def balance_inquiry(self):
         print("Your balance = ", self.inquiry)
     
-
+print("============================")
 print("welcome to simple ATM system")
+print("============================\n")
 uname = "user" 
 user = User(uname)
 user.atm = True 
@@ -41,7 +45,7 @@ while user.atm == True:
     pw = input("Input your password first\n")
 
     while user.check_password(pw) == True:
-        print("Choose a service\n1. Deposit\n2. Withdraw\n3. Balance Inquiry\n4. Cancel")
+        print("================\nChoose a service\n================\n1. Deposit\n2. Withdraw\n3. Balance Inquiry\n4. Cancel")
 
         value = input()
         if value == '1':
