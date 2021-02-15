@@ -1,0 +1,21 @@
+# import unittest
+'''
+using unittest module
+
+- You put your tests into classes as methods
+- You use a series of special assertion methods in the unittest.TestCase class instead of the built-in assert statement
+
+'''
+
+import unittest
+
+class TestSum(unittest.TestCase):
+
+    def test_sum(self):
+        self.assertEqual(sum([1,2,3]), 6, "should be 6")
+
+    def test_sum_tuple(self):
+        self.assertEqual(sum((1,2,5)), 6, "should be 6")
+
+if __name__ == '__main__':
+    unittest.main()
