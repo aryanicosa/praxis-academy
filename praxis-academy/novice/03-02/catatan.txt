@@ -1,0 +1,11 @@
+'''
+https://realpython.com/python-concurrency/
+
+concurrency :
+proses-proses pada sebuah prosesor yg terjadi tanpa mempedulikan urutan 
+ secara simultan 
+menukar proses antar satu dengan yang lainnya
+
+paralelisme
+proses yang terjadi dalam beberapa prosesor yang bekerja bersamaan 
+'''
